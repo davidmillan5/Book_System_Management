@@ -5,6 +5,7 @@ const userSchema = new mongoose.Schema({
   lastname: { String, require: true },
   email: { String, require: true },
   password: { String, require: true },
+  role: {String, require: true}
 });
 
 const User = mongoose.model('User', userSchema);
