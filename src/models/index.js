@@ -1,2 +1,2 @@
-exports.books = require('./books');
-exports.user = require('./user');
+exports.Book = require('./books');
+exports.User = require('./user');

@@ -2,7 +2,7 @@ const { Book } = require('../models');
 const { bookSchema } = require('../schema');
 
 const createBook = async (req, res) => {
-  const validate = bookSchema.validate(req.body);
+  const validate = bookSchema.bookSchema.validate(req.body);
   if (validate.error) {
     return res.status(400).send(validate.error);
   }
@@ -19,7 +19,7 @@ const getBookById = async (req, res) => {
 
 const updateBook = async (req, res) => {
   const { id } = req.params;
-  const validate = bookSchema.validate(req.body);
+  const validate = bookSchema.bookSchema.validate(req.body);
   if (validate.error) {
     return res.status(400).send(validate.error);
   }

@@ -8,6 +8,8 @@ const PORT = process.env.PORT || 3000,
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 
+app.use('/', require('./routes'));
+
 const start = async () => {
   try {
     await mongoose.connect(process.env.MONGODB_CONNECTION, {
