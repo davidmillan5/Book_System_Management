@@ -32,6 +32,19 @@ const getAllBooks = async (_, res) => {
   res.json(book);
 };
 
+const getBookByCategory = async (req, res) => {
+  const { category } = req.params;
+  console.log(category);
+  try {
+    const books = await Book.find({ category: category }).exec();
+    res.json(books);
+  } catch (error) {
+    res.json(error);
+  }
+};
+
+const getBookByAuthor = async (req, res) => {};
+
 const deleteBook = async (req, res) => {
   const { id } = req.params;
   const book = await Book.findOneAndRemove(id, { new: true });
@@ -42,6 +55,8 @@ module.exports = {
   createBook,
   getAllBooks,
   getBookById,
+  getBookByCategory,
+  getBookByAuthor,
   updateBook,
   deleteBook,
 };

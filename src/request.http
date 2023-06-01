@@ -7,13 +7,20 @@ POST http://localhost:3000/api/v1/books HTTP/1.1
 Content-Type: application/json
 
 {
-  "title": "Node.js in Action",
-  "author": "Tim Oxley",
-  "edition": "Second Edition",
-  "isbn": "978-1617292576",
-  "publisher": "Manning",
-  "pages": 392,
-  "published": "08/16/2017",
-  "category": "JavaScript",
-  "available_units": 10
+  "title": "Clean Code: A Handbook of Agile Software Craftsmanship",
+  "author": "Robert C. Martin",
+  "edition": "First Edition",
+  "isbn": "978-0132350884",
+  "publisher": "Pearson",
+  "pages": 464,
+  "published": "07/01/2008",
+  "category": "Programming",
+  "available_units": 8
 }
+
+###
+GET http://localhost:3000/api/v1/books/category/Non-Fiction HTTP/1.1
+
+
+###
+GET http://localhost:3000/api/v1/books/647918cd4c618479167c72f6 HTTP/1.1

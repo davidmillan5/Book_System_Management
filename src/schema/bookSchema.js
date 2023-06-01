@@ -8,6 +8,6 @@ exports.bookSchema = Joi.object({
   publisher: Joi.string().min(4).max(50).required(),
   pages: Joi.number().min(10).max(5000).required(),
   published: Joi.date().required(),
-  category: Joi.string().min(10).max(100).required(),
+  category: Joi.string().min(4).max(100).required(),
   available_units: Joi.number().min(1).max(1000).required(),
 });

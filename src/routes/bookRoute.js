@@ -8,6 +8,8 @@ router.get('/health', (_, res) => {
 
 router.route('/').get(Book.getAllBooks).post(Book.createBook);
 
+router.route(`/category/:category`).get(Book.getBookByCategory);
+
 router
   .route(`/:id`)
   .get(Book.getBookById)
