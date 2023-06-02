@@ -6,3 +6,10 @@
 20230602	06:29:43	4c31a9ee-f9bd-4a2e-88ac-567fee706b11	POST	undefined	/api/v1/books
 20230602	06:29:57	f6a8ad72-0c46-432f-a4ae-ec4b51acc9ed	POST	undefined	/api/v1/books
 20230602	06:30:17	13cf0358-4305-40d4-8897-6bf82ab80e90	POST	undefined	/api/v1/books
+20230602	07:00:08	2aeced98-10a1-4ef6-86c1-775602f5c245	GET	undefined	/api/v1/users/
+20230602	07:01:04	bbc3ebd0-619c-467e-856f-ec336eeb8241	GET	undefined	/api/v1/users/
+20230602	07:04:57	cf6aa875-8f58-487d-ad4f-dc9927f10b32	POST	undefined	/api/v1/users/
+20230602	07:05:26	6727fcb5-a834-4049-bf89-bff3e95e8da3	POST	undefined	/api/v1/users/
+20230602	07:05:38	5f1a808d-e783-4d4a-8219-11cc6add53fc	POST	undefined	/api/v1/users/
+20230602	07:06:38	dac701ff-59e4-41f0-8786-b24f05cbbe64	GET	undefined	/api/v1/users/
+20230602	07:08:08	50e4f0ff-5337-45bb-b23f-2039aa0701da	POST	undefined	/api/v1/users/

@@ -28,3 +28,22 @@ GET http://localhost:3000/api/v1/books/author/Jonathan Wexler HTTP/1.1
 
 ###
 GET http://localhost:3000/api/v1/books/647918cd4c618479167c72f6 HTTP/1.1
+
+
+
+
+###
+GET http://localhost:3000/api/v1/users/ HTTP/1.1
+
+
+###
+POST http://localhost:3000/api/v1/users/ HTTP/1.1
+Content-Type: application/json
+
+{
+  "name": "Akane",
+  "lastname": "Tsunemori",
+  "email":"thelawfirst@gmail.com",
+  "password":"kogamixoxo",
+  "role":"user"
+}

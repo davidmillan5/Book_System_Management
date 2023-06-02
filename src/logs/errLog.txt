@@ -1,1 +1,3 @@
 20230602	06:29:43	688cd7d8-637b-4541-b247-50acf318e69b	SyntaxError: Unexpected token , in JSON at position 211
+20230602	07:00:08	c9ae2994-4afd-44e4-9b17-1b2df479d92b	TypeError: User.findAll is not a function
+20230602	07:04:57	18dd0349-02f4-4284-b82c-78185d48da4f	SyntaxError: Unexpected token } in JSON at position 132
