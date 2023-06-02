@@ -43,7 +43,16 @@ const getBookByCategory = async (req, res) => {
   }
 };
 
-const getBookByAuthor = async (req, res) => {};
+const getBookByAuthor = async (req, res) => {
+  const { author } = req.params;
+  console.log(author);
+  try {
+    const books = await Book.find({ author: author }).exec();
+    res.json(books);
+  } catch (error) {
+    res.json(error);
+  }
+};
 
 const deleteBook = async (req, res) => {
   const { id } = req.params;

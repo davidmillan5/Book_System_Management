@@ -1,0 +1,8 @@
+20230602	06:25:55	e846a5cc-7bf9-4310-bcdc-a584496d54a3	GET	undefined	/api/v1/books
+20230602	06:26:12	2e2a277e-ed69-46a1-8cec-6a9082632150	GET	undefined	/api/v1/books/category/Non-Fiction
+20230602	06:26:18	30dd6d6c-b7c4-4746-b893-7814d468eff7	GET	undefined	/api/v1/books/author/Jonathan%20Wexler
+20230602	06:26:33	41fea9d5-800d-42fd-bc75-fec1e8cbcffd	GET	undefined	/api/v1/books/647918cd4c618479167c72f6
+20230602	06:27:23	a032a94d-fcca-4447-b85b-9e73e80b26e5	GET	undefined	/api/v1/books
+20230602	06:29:43	4c31a9ee-f9bd-4a2e-88ac-567fee706b11	POST	undefined	/api/v1/books
+20230602	06:29:57	f6a8ad72-0c46-432f-a4ae-ec4b51acc9ed	POST	undefined	/api/v1/books
+20230602	06:30:17	13cf0358-4305-40d4-8897-6bf82ab80e90	POST	undefined	/api/v1/books

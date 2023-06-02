@@ -3,12 +3,17 @@ require('dotenv').config();
 const PORT = process.env.PORT || 3000,
   express = require('express'),
   app = express(),
-  mongoose = require('mongoose');
+  mongoose = require('mongoose'),
+  { eventLogger, errorHandler } = require('./middleware');
+
+app.use(eventLogger.logger);
 
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 
 app.use('/', require('./routes'));
+
+app.use(errorHandler);
 
 const start = async () => {
   try {
