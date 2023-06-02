@@ -54,7 +54,20 @@ const getBookByAuthor = async (req, res) => {
   }
 };
 
-const deleteBook = async (req, res) => {
+const borrowBook = async (req, res, next) => {
+  const { id, quantity } = req.params;
+  console.log(id);
+  try {
+    const books = await Book.findByIdAndUpdate(id, {
+      available_units: (available_units = available_units - quantity),
+    }).exec();
+    res.json(books);
+  } catch (error) {
+    res.json(error);
+  }
+};
+
+const deleteBook = async (req, res, next) => {
   const { id } = req.params;
   const book = await Book.findOneAndRemove(id, { new: true });
   res.json({ message: `Book ${book.title} has been deleted` });
@@ -67,5 +80,6 @@ module.exports = {
   getBookByCategory,
   getBookByAuthor,
   updateBook,
+  borrowBook,
   deleteBook,
 };
