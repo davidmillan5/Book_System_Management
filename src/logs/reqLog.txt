@@ -21,3 +21,9 @@
 20230602	07:31:49	b9056d56-ccab-4d50-a7c9-4d55231cd9ea	GET	undefined	/api/v1/borrow/647918cd4c618479167c72f6&1
 20230602	07:33:17	51595a6a-5c71-475d-b067-3d13407a28aa	GET	undefined	/api/v1/borrow/647918cd4c618479167c72f6/1
 20230602	07:36:02	711e67a6-ff94-40ce-83b0-23d92f9c7fd4	PUT	undefined	/api/v1/borrow/647918cd4c618479167c72f6&1
+20230607	20:08:37	6eeee595-a9e6-4252-82bf-82ad7ae9f8da	GET	undefined	/api/v1/books
+20230607	20:09:12	9318eb3a-989f-4521-8ee9-e0d1cd29b3d5	GET	undefined	/api/v1/books/category/Non-Fiction
+20230607	20:09:23	296aef27-744f-4552-bf61-05f48fe598a7	GET	undefined	/api/v1/books/author/Jonathan%20Wexler
+20230607	20:09:37	c92a720e-570e-49b7-b51b-921ea725cef6	GET	undefined	/api/v1/books/647918cd4c618479167c72f6
+20230607	20:42:47	acad5e7f-caa0-4b38-82eb-74fe798579e2	GET	undefined	/api/v1/books
+20230607	20:43:06	093e67f5-52c2-4740-8cf3-d254edc7efae	GET	undefined	/api/v1/books/isbn/978-1617294747

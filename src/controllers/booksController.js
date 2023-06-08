@@ -54,6 +54,17 @@ const getBookByAuthor = async (req, res) => {
   }
 };
 
+const getBookByIsbn = async (req, res) => {
+  const { isbn } = req.params;
+  console.log(isbn);
+  try {
+    const book = await Book.find({ isbn: isbn }).exec();
+    res.json(book);
+  } catch (error) {
+    res.json(error);
+  }
+};
+
 const borrowBook = async (req, res, next) => {
   const { id, quantity } = req.params;
   console.log(id);
@@ -78,6 +89,7 @@ module.exports = {
   getAllBooks,
   getBookById,
   getBookByCategory,
+  getBookByIsbn,
   getBookByAuthor,
   updateBook,
   borrowBook,
