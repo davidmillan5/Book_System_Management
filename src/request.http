@@ -43,6 +43,8 @@ Content-Type: application/json
   "quantity": 2
 }
 
+###
+DELETE http://localhost:3000/api/v1/books/64821b3eff0f708d74103f32 HTTP/1.1
 
 
 ###
