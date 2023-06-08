@@ -10,7 +10,9 @@ const bookSchema = new mongoose.Schema(
     pages: { type: Number, required: true },
     published: { type: Date, required: true },
     category: { type: String, required: true },
-    available_units: { type: Number, required: true },
+    total_units: { type: Number, required: true },
+    available_units: { type: Number, default: 0 },
+    borrow_units: { type: Number, default: 0 },
   },
   { timestamps: true, versionKey: false }
 );

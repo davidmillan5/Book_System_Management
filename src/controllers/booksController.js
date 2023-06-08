@@ -69,14 +69,18 @@ const borrowBook = async (req, res) => {
   const { id } = req.params;
   const { quantity } = req.body;
   const object = await Book.findById(id);
-  console.log('object -->', object);
-  console.log('id   -----> ' + id, 'quantity ----> ' + quantity);
-  console.log('available units ----> ');
+  const borrowUnits =
+    object.total_units >= object.available_units &&
+    object.available_units > quantity
+      ? req.body.quantity
+      : 'enter a valid value';
   try {
     const books = await Book.findByIdAndUpdate(id, {
-      available_units: object.available_units + req.body.quantity,
+      available_units: object.total_units - borrowUnits,
+      borrow_units: borrowUnits,
+
+      // object.available_units + req.body.quantity,
     }).exec();
-    console.log('available units ---->', books.available_units);
 
     res.json(books);
   } catch (error) {

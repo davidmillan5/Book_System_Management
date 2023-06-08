@@ -7,15 +7,17 @@ POST http://localhost:3000/api/v1/books HTTP/1.1
 Content-Type: application/json
 
 {
-  "title": "Introducing Spring Framework 6: Learning and Building Java-based Applications With Spring",
-  "author": "Felipe Gutierrez",
+  "title": "Modern Java in Action: Lambdas, streams, functional and reactive programming",
+  "author": "Raoul-Gabriel Urma",
   "edition": "2nd Edition",
-  "isbn": "978-1484286364",
-  "publisher": "Apress",
-  "pages": 230,
-  "published": "12/16/2022",
-  "category": "Spring",
-  "available_units": 8
+  "isbn": "978-1617293566",
+  "publisher": "Manning",
+  "pages": 592,
+  "published": "11/15/2018",
+  "category": "Java",
+  "total_units": 10,
+  "available_units": 10,
+  "borrow_units":0
 }
 
 ###
@@ -30,15 +32,15 @@ GET http://localhost:3000/api/v1/books/isbn/978-1260463552 HTTP/1.1
 
 
 ###
-GET http://localhost:3000/api/v1/books/647918cd4c618479167c72f6 HTTP/1.1
+GET http://localhost:3000/api/v1/books/64821bf5ff0f708d74103f36 HTTP/1.1
 
 
 ###
-PUT http://localhost:3000/api/v1/books/borrow/647918cd4c618479167c72f6 HTTP/1.1
+PUT http://localhost:3000/api/v1/books/borrow/64821bf5ff0f708d74103f36 HTTP/1.1
 Content-Type: application/json
 
 {
-  "quantity": 24
+  "quantity": 2
 }
 
 
