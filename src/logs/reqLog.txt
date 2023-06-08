@@ -232,3 +232,6 @@
 20230608	14:37:15	64760004-251c-41ce-8bce-e0d6257d1666	DELETE	undefined	/api/v1/books/64821b3eff0f708d74103f32
 20230608	14:38:07	67e5326d-9ce6-4764-a320-3d544df7d37f	DELETE	undefined	/api/v1/books/6481f5f6b65c2ca3e294ec16
 20230608	14:38:27	5ca48c04-ac0f-4085-ad84-9362cbcebf9a	DELETE	undefined	/api/v1/books/64821b3eff0f708d74103f32
+20230608	16:20:19	e7e25ea2-8688-4fc6-a141-f3a387cd710d	POST	undefined	/api/v1/users/
+20230608	16:21:20	4cefd0bb-3779-47aa-a0db-122205c3637b	POST	undefined	/api/v1/users/
+20230608	16:22:24	c8365507-307a-43fb-a99d-bade0dafd401	POST	undefined	/api/v1/users/

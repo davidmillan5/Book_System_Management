@@ -3,7 +3,7 @@ const mongoose = require('mongoose');
 const borrowerRecordSchema = new mongoose.Schema(
   {
     userId: { type: String, required: true },
-    bookId: { type: String, required: true },
+    bookIsbn: { type: String, required: true },
     bookTitle: { type: String, required: true },
     borrow_units: { type: Number, required: true },
     borrow_date: { type: Date, default: Date.now() },
