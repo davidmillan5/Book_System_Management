@@ -67,12 +67,17 @@ const getBookByIsbn = async (req, res) => {
 
 const borrowBook = async (req, res) => {
   const { id } = req.params;
-  console.log('id ->', id);
+  const { quantity } = req.body;
+  const object = await Book.findById(id);
+  console.log('object -->', object);
+  console.log('id   -----> ' + id, 'quantity ----> ' + quantity);
+  console.log('available units ----> ');
   try {
     const books = await Book.findByIdAndUpdate(id, {
-      available_units: (req.params.available_units = req.params.available_units - req.body.quantity),
+      available_units: object.available_units + req.body.quantity,
     }).exec();
-    console.log('quantity -> ', req.body.quantity);
+    console.log('available units ---->', books.available_units);
+
     res.json(books);
   } catch (error) {
     res.json(error);

@@ -12,7 +12,7 @@ const bookSchema = new mongoose.Schema(
     category: { type: String, required: true },
     available_units: { type: Number, required: true },
   },
-  { versionKey: false }
+  { timestamps: true, versionKey: false }
 );
 
 const Book = mongoose.model('Book', bookSchema);
