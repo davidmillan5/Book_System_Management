@@ -11,7 +11,7 @@ router.route('/').get(Book.getAllBooks).post(Book.createBook);
 router.route(`/category/:category`).get(Book.getBookByCategory);
 router.route(`/author/:author`).get(Book.getBookByAuthor);
 router.route(`/isbn/:isbn`).get(Book.getBookByIsbn);
-router.route(`/borrow/:id&:quantity`).get(Book.borrowBook);
+router.route(`/borrow/:id`).put(Book.borrowBook);
 
 router
   .route(`/:id`)

@@ -65,20 +65,21 @@ const getBookByIsbn = async (req, res) => {
   }
 };
 
-const borrowBook = async (req, res, next) => {
-  const { id, quantity } = req.params;
-  console.log(id);
+const borrowBook = async (req, res) => {
+  const { id } = req.params;
+  console.log('id ->', id);
   try {
     const books = await Book.findByIdAndUpdate(id, {
-      available_units: (available_units = available_units - quantity),
+      available_units: (req.params.available_units = req.params.available_units - req.body.quantity),
     }).exec();
+    console.log('quantity -> ', req.body.quantity);
     res.json(books);
   } catch (error) {
     res.json(error);
   }
 };
 
-const deleteBook = async (req, res, next) => {
+const deleteBook = async (req, res) => {
   const { id } = req.params;
   const book = await Book.findOneAndRemove(id, { new: true });
   res.json({ message: `Book ${book.title} has been deleted` });
