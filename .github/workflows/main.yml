@@ -35,5 +35,7 @@ jobs:
        # A file, directory or wildcard pattern that describes what to upload
        # path: . si es puro js
        # path {workspace}/build si es typescript
-       path: .
-       ignore: node_modules
+       path: |
+        src/build
+        src/*.js
+        !src/node-modules
