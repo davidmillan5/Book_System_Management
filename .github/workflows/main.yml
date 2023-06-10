@@ -22,3 +22,4 @@ jobs:
       
     - name: Install
       run: npm ci --silent
+      working-directory: src
