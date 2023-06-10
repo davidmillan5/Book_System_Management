@@ -33,5 +33,9 @@ jobs:
        # Artifact name
        name: build
        # A file, directory or wildcard pattern that describes what to upload
-       path: build
-       ignore: node_modules
+       # path: . si es puro js
+       # path {workspace}/build si es typescript
+       path: |
+        src/build
+        src/*.js
+        !src/node-modules
