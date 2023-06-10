@@ -9,7 +9,7 @@ const userSchema = new mongoose.Schema(
     password: { type: String, required: true },
     role: { type: String, required: true },
   },
-  { versionKey: false }
+  { timestamps: true, versionKey: false  }
 );
 
 const User = mongoose.model('User', userSchema);
