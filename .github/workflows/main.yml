@@ -21,7 +21,5 @@ jobs:
          node-version: 18.x
       
     - name: Install
-      run: | 
-        npm ci --silent
-        exit 1
+      run: npm ci --silent
       working-directory: src
