@@ -7,5 +7,6 @@ router.get('/health', (_, res) => {
 });
 
 router.route('/register').post(userAuth.registerUser);
+router.route('/login').post(userAuth.loginUser);
 
 module.exports = router;

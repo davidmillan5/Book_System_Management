@@ -52,16 +52,23 @@ GET http://localhost:3000/api/v1/users/ HTTP/1.1
 
 
 ###
-POST http://localhost:3000/api/v1/users/ HTTP/1.1
+POST http://localhost:3000/api/v1/users/register HTTP/1.1
 Content-Type: application/json
 
 {
-  "id": 310,
-  "name": "Edward",
-  "lastname": "Elric",
-  "email":"hagane@gmail.com",
-  "password":"alphonse",
-  "role":"user"
+  "name": "Touka",
+  "lastname": "Kirishima",
+  "email":"touka@gmail.com",
+  "password":"101010"
+}
+
+###
+POST http://localhost:3000/api/v1/users/login HTTP/1.1
+Content-Type: application/json
+
+{
+  "email": "touka@gmail.com",
+  "password": "101010"
 }
 
 
@@ -72,3 +79,5 @@ Content-Type: application/json
 {
   "borrow_units":2
 }
+
+

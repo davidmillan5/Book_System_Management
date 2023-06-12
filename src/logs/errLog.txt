@@ -5,3 +5,5 @@
 20230607	21:39:03	9d6f0d26-2acc-4f58-ba4c-91bdb10b5035	SyntaxError: Unexpected token } in JSON at position 21
 20230608	11:49:17	e720f3bf-55bc-4b96-bdee-4e4b7da56ea0	SyntaxError: Unexpected token } in JSON at position 21
 20230608	16:21:20	c1db2c3b-a880-4efb-9d4f-fb6dbef33e00	ValidationError: User validation failed: userId: Path `userId` is required.
+20230612	17:12:23	c7a1c1c5-7d0b-40ce-b1f9-22dde4cfe721	SyntaxError: Unexpected token } in JSON at position 126
+20230612	18:01:17	17207425-ac06-4d97-831f-35effd71baf0	SyntaxError: Unexpected token } in JSON at position 38
