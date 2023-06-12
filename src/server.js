@@ -25,6 +25,7 @@ const start = async () => {
       console.log(`Server listening on port ${PORT}`);
     });
   } catch (error) {
+    console.log('database connection failed. exiting now...');
     console.error(error);
     process.exit(1);
   }
