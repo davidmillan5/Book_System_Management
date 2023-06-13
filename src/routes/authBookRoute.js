@@ -1,16 +1,17 @@
 const express = require('express'),
   router = express.Router(),
-  { authBook } = require('../controllers');
+  { authBook } = require('../controllers'),
+  { verifyToken } = require('../middleware/authmiddleware');
 
 router.get('/health', (_, res) => {
   res.send('check');
 });
 
-router.route('/').get(authBook.getAllBooks);
+router.get('/', verifyToken, authBook.getAllBooks);
 
-router.route(`/category/:category`).get(authBook.getBookByCategory);
-router.route(`/author/:author`).get(authBook.getBookByAuthor);
-router.route(`/isbn/:isbn`).get(authBook.getBookByIsbn);
-router.route(`/:id`).get(authBook.getBookById);
+router.get(`/category/:category`, verifyToken, authBook.getBookByCategory);
+router.get(`/author/:author`, verifyToken, authBook.getBookByAuthor);
+router.get(`/isbn/:isbn`, verifyToken, authBook.getBookByIsbn);
+router.get(`/:id`, verifyToken, authBook.getBookById);
 
 module.exports = router;
