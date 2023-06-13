@@ -1,6 +1,7 @@
 const express = require('express'),
   router = express.Router(),
-  { Book } = require('../controllers');
+  { Book } = require('../controllers'),
+  { verifyToken } = require('../middleware/authmiddleware');
 
 router.get('/health', (_, res) => {
   res.send('check');
