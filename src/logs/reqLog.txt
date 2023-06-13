@@ -493,3 +493,6 @@
 20230612	23:37:21	f9dc3753-902f-4dd8-b1dc-83530b7d7965	GET	undefined	/api/v1/books/author/Craig%20Walls?x-access-token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoiNjQ4N2EyZjJlOWQzZjhlMGE1NDlmOGRlIiwiZW1haWwiOiJ0b3VrYUBnbWFpbC5jb20iLCJpYXQiOjE2ODY2MzA0OTUsImV4cCI6MTY4NjYzNzY5NX0.yfVatx523ppmEpZrLkgFOUwQ_K7MXIqohfW8WEHSSB4
 20230612	23:37:56	b35acbc4-c79a-4aa8-bf7a-ac0525a18e3e	GET	undefined	/api/v1/books/category/Spring?=
 20230612	23:38:13	20f9e9af-8ed5-41dd-822f-d0b31cb42e2c	GET	undefined	/api/v1/books/author/Craig%20Walls
+20230613	16:57:12	af1b8398-06c9-41ac-bb41-200e65068d84	POST	undefined	/api/v1/users/
+20230613	16:58:29	5ea3c382-8848-4a97-8c59-d94d0233a320	POST	undefined	/api/v1/users/
+20230613	17:02:07	a3dd636a-4a9c-4d19-b2b5-606bc85d9a78	POST	undefined	/api/v1/users/
