@@ -21,7 +21,7 @@ Content-Type: application/json
 }
 
 ###
-GET http://localhost:3000/api/v1/books/category/Non-Fiction HTTP/1.1
+GET http://localhost:3000/api/v1/books/category/Spring HTTP/1.1
 
 
 ###
@@ -67,19 +67,19 @@ Content-Type: application/json
 
 
 ###
-POST http://localhost:3000/api/v1/borrow/978-1617293566 HTTP/1.1
+POST http://localhost:3000/api/v1/borrow/978-0132350884 HTTP/1.1
 Content-Type: application/json
 
 {
   "email": "touka@gmail.com",
-  "borrow_units":2
+  "borrow_units":1
 }
 
 
 ###
-POST  http://localhost:3000/api/v1/return/6487d07bad20ddf82fd88124 HTTP/1.1
+POST  http://localhost:3000/api/v1/return/6487d13987de961516a8de14 HTTP/1.1
 Content-Type: application/json
 
 {
-  "returned_units":2
+  "returned_units":1
 }
