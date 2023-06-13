@@ -65,28 +65,28 @@ const getBookByIsbn = async (req, res) => {
   }
 };
 
-const borrowBook = async (req, res) => {
-  const { id } = req.params;
-  const { quantity } = req.body;
-  const object = await Book.findById(id);
-  const borrowUnits =
-    object.total_units >= object.available_units &&
-    object.available_units > quantity
-      ? req.body.quantity
-      : 'enter a valid value';
-  try {
-    const books = await Book.findByIdAndUpdate(id, {
-      available_units: object.total_units - borrowUnits,
-      borrow_units: borrowUnits,
+// const borrowBook = async (req, res) => {
+//   const { id } = req.params;
+//   const { quantity } = req.body;
+//   const object = await Book.findById(id);
+//   const borrowUnits =
+//     object.total_units >= object.available_units &&
+//     object.available_units > quantity
+//       ? req.body.quantity
+//       : 'enter a valid value';
+//   try {
+//     const books = await Book.findByIdAndUpdate(id, {
+//       available_units: object.total_units - borrowUnits,
+//       borrow_units: borrowUnits,
 
-      // object.available_units + req.body.quantity,
-    }).exec();
+//       // object.available_units + req.body.quantity,
+//     }).exec();
 
-    res.json(books);
-  } catch (error) {
-    res.json(error);
-  }
-};
+//     res.json(books);
+//   } catch (error) {
+//     res.json(error);
+//   }
+// };
 
 const deleteBook = async (req, res) => {
   const { id } = req.params;
@@ -102,6 +102,5 @@ module.exports = {
   getBookByIsbn,
   getBookByAuthor,
   updateBook,
-  borrowBook,
   deleteBook,
 };

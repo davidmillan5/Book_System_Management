@@ -6,6 +6,6 @@ router.get('/health', (_, res) => {
   res.send('check');
 });
 
-router.route('/:id&:isbn').post(Borrow.createBorrowedRecord);
+router.route('/:isbn').post(Borrow.createBorrowedRecord);
 
 module.exports = router;

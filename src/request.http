@@ -35,13 +35,7 @@ GET http://localhost:3000/api/v1/books/isbn/978-1260463552 HTTP/1.1
 GET http://localhost:3000/api/v1/books/64821bf5ff0f708d74103f36 HTTP/1.1
 
 
-###
-PUT http://localhost:3000/api/v1/books/borrow/64821bf5ff0f708d74103f36 HTTP/1.1
-Content-Type: application/json
 
-{
-  "quantity": 2
-}
 
 ###
 DELETE http://localhost:3000/api/v1/books/64821b3eff0f708d74103f32 HTTP/1.1
@@ -73,10 +67,11 @@ Content-Type: application/json
 
 
 ###
-POST http://localhost:3000/api/v1/borrow/310&978-1617293566 HTTP/1.1
+POST http://localhost:3000/api/v1/borrow/978-1617293566 HTTP/1.1
 Content-Type: application/json
 
 {
+  "email": "touka@gmail.com",
   "borrow_units":2
 }
 
