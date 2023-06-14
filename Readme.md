@@ -34,3 +34,7 @@ The Book System Management application is deployed on Render.com, utilizing a cl
 ## Testing
 
 The Book System Management application has been thoroughly tested using Postman.
+
+## Postman - Endpoints
+
+[Postman EndPoints](https://documenter.getpostman.com/view/24562678/2s93sgVVD1#5a06d053-f6bc-4ea9-8cd2-6375d3fe9cc9)
