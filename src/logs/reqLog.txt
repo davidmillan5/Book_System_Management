@@ -628,3 +628,16 @@
 20230613	21:04:15	1c98280a-dcbf-460d-8652-3103fbde493e	GET	undefined	/api/v1/books/greateryear/01,12,2018
 20230614	14:25:10	ce052ddb-d565-487c-be24-e5117c835912	GET	undefined	/api/v1/borrow/
 20230614	14:27:03	190276d9-fd82-4e54-80e7-3a995ea31700	GET	undefined	/api/v1/borrow/
+20230614	14:45:36	f740fef1-6d49-47e6-8571-a724886a605a	GET	undefined	/api/v1/borrow/touka@gmail.com
+20230614	14:45:42	b3402954-7c0a-45a3-9ad4-ce8a8d85fc00	GET	undefined	/api/v1/borrow/touka@gmail.com
+20230614	14:46:16	0636d26c-4e10-48ee-be4a-ba4101746e46	GET	undefined	/api/v1/borrow/'touka@gmail.com'
+20230614	14:46:27	e66a0bd5-2954-41a6-b281-8c7249de2edd	GET	undefined	/api/v1/borrow/touka@gmail.com
+20230614	14:47:15	95f326c3-17b3-4fdc-8ff8-9d384732cda2	GET	undefined	/api/v1/borrow/
+20230614	14:48:14	770f3ed5-e251-4fc4-8716-c68fe2aa21d3	GET	undefined	/api/v1/borrow/touka@gmail.com
+20230614	14:48:52	228d1f60-d8a9-46ee-8f63-2e47c18ad62d	GET	undefined	/api/v1/borrow/touka@gmail.com
+20230614	14:48:53	f97ccb08-aafd-4670-bdae-cea1244aab89	GET	undefined	/api/v1/borrow/touka@gmail.com
+20230614	14:49:36	1999f11d-e56a-4b45-ba67-5ba21404b032	GET	undefined	/api/v1/borrow/touka@gmail.com
+20230614	14:50:19	56450a75-fcb0-4329-a96c-a8e89d3f0895	GET	undefined	/api/v1/borrow/touka@gmail.com
+20230614	15:09:26	46386e9f-34fe-45f0-ba58-bc3dae909bd2	GET	undefined	/api/v1/return/
+20230614	15:12:48	ee25b0a6-c600-472e-ab2d-4877eb1f247e	GET	undefined	/api/v1/return/touka@gmail.com
+20230614	15:15:11	3d700d26-710d-4b4b-972d-10eb6fdf31f6	GET	undefined	/api/v1/return/touka@gmail.com

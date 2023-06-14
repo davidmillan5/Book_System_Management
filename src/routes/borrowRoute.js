@@ -10,5 +10,6 @@ router.get('/health', (_, res) => {
 // router.route('/:isbn').post(Borrow.createBorrowedRecord);
 router.post('/:isbn', verifyToken, Borrow.createBorrowedRecord);
 router.get('/', verifyTokenAdmin, Borrow.getAllBorrowedBooks);
+router.get('/:email', verifyToken, Borrow.getAllBorrowedBooksByUser);
 
 module.exports = router;

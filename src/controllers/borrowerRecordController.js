@@ -47,6 +47,17 @@ const createBorrowedRecord = async (req, res) => {
   }
 };
 
+const getAllBorrowedBooksByUser = async (req, res) => {
+  const { email } = req.params;
+  try {
+    const books = await BorrowerRecord.find({ user_email: email }).exec();
+    console.log(books);
+    res.json(books);
+  } catch (error) {
+    res.json(error);
+  }
+};
+
 const getAllBorrowedBooks = async (_, res) => {
   const borrowedBooks = await BorrowerRecord.find();
   res.json(borrowedBooks);
@@ -55,4 +66,5 @@ const getAllBorrowedBooks = async (_, res) => {
 module.exports = {
   createBorrowedRecord,
   getAllBorrowedBooks,
+  getAllBorrowedBooksByUser,
 };

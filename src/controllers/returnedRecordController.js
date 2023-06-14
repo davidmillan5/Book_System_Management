@@ -54,4 +54,24 @@ const createReturnedRecord = async (req, res) => {
   }
 };
 
-module.exports = { createReturnedRecord };
+const getAllReturnedBooksRecords = async (_, res) => {
+  const returnedBooks = await ReturnedRecord.find();
+  res.json(returnedBooks);
+};
+
+const getAllReturnedBooksByUser = async (req, res) => {
+  const { email } = req.params;
+  try {
+    const books = await BorrowerRecord.find({ user_email: email }).exec();
+    console.log(books);
+    res.json(books);
+  } catch (error) {
+    res.json(error);
+  }
+};
+
+module.exports = {
+  createReturnedRecord,
+  getAllReturnedBooksRecords,
+  getAllReturnedBooksByUser,
+};

@@ -1,7 +1,7 @@
 const express = require('express'),
   router = express.Router(),
   { Returned } = require('../controllers'),
-  { verifyToken } = require('../middleware/authmiddleware');
+  { verifyToken, verifyTokenAdmin } = require('../middleware/authmiddleware');
 
 router.get('/health', (_, res) => {
   res.send('check');
@@ -9,5 +9,7 @@ router.get('/health', (_, res) => {
 
 // router.route('/:id').post(Returned.createReturnedRecord);
 router.post('/:id', verifyToken, Returned.createReturnedRecord);
+router.get('/', verifyTokenAdmin, Returned.getAllReturnedBooksRecords);
+router.get('/:email', verifyToken, Returned.getAllReturnedBooksByUser);
 
 module.exports = router;
