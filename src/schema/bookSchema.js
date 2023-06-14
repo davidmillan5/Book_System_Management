@@ -1,7 +1,7 @@
 const Joi = require('joi');
 
 exports.bookSchema = Joi.object({
-  title: Joi.string().min(10).max(100).required(),
+  title: Joi.string().min(10).max(200).required(),
   author: Joi.string().min(5).max(50).required(),
   edition: Joi.string().min(5).max(50).required(),
   isbn: Joi.string().min(8).max(30).required(),

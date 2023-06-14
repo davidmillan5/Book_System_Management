@@ -1,22 +1,20 @@
 const express = require('express'),
   router = express.Router(),
   { Book } = require('../controllers'),
-  { verifyToken } = require('../middleware/authmiddleware');
+  { verifyTokenAdmin } = require('../middleware/authmiddleware');
 
 router.get('/health', (_, res) => {
   res.send('check');
 });
 
-router.route('/').get(Book.getAllBooks).post(Book.createBook);
+router.get('/', verifyTokenAdmin, Book.getAllBooks);
+router.post('/', verifyTokenAdmin, Book.createBook);
 
-router.route(`/category/:category`).get(Book.getBookByCategory);
-router.route(`/author/:author`).get(Book.getBookByAuthor);
-router.route(`/isbn/:isbn`).get(Book.getBookByIsbn);
-
-router
-  .route(`/:id`)
-  .get(Book.getBookById)
-  .put(Book.updateBook)
-  .delete(Book.deleteBook);
+router.get(`/category/:category`, verifyTokenAdmin, Book.getBookByCategory);
+router.get(`/author/:author`, verifyTokenAdmin, Book.getBookByAuthor);
+router.get(`/isbn/:isbn`, verifyTokenAdmin, Book.getBookByIsbn);
+router.get(`/:id`, verifyTokenAdmin, Book.getBookById);
+router.put(`/:id`, verifyTokenAdmin, Book.updateBook);
+router.delete(`/:id`, verifyTokenAdmin, Book.updateBook);
 
 module.exports = router;

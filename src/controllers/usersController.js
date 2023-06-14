@@ -33,7 +33,7 @@ const createUser = async (req, res, next) => {
 
     const token = jwt.sign(
       { user_id: user._id, email },
-      process.env.TOKEN_KEY,
+      process.env.TOKEN_KEY_ADMIN,
       {
         expiresIn: '1h',
       }
@@ -76,7 +76,7 @@ const loginAdmin = async (req, res) => {
       // Create token
       const token = jwt.sign(
         { user_id: user._id, email },
-        process.env.TOKEN_KEY,
+        process.env.TOKEN_KEY_ADMIN,
         {
           expiresIn: '2h',
         }

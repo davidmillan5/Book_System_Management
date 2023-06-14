@@ -11,7 +11,7 @@ router.get('/health', (_, res) => {
 
 router.get('/', verifyTokenAdmin, User.getAllUsers);
 router.post('/', verifyTokenAdmin, User.createUser);
-router.post('/login/admin', verifyTokenAdmin, User.loginAdmin);
+router.route('/login/admin').post(User.loginAdmin);
 
 router.route('/register').post(userAuth.registerUser);
 router.route('/login').post(userAuth.loginUser);

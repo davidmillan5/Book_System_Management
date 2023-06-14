@@ -7,6 +7,7 @@ router.get('/', welcomePage);
 router.get('/health', healthCheck);
 router.use('/api/v1/users', require('./userRoute'));
 router.use('/api/v1/books', require('./authBookRoute'));
+router.use('/api/v1/books', require('./bookRoute'));
 router.use('/api/v1/borrow', require('./borrowRoute'));
 router.use('/api/v1/users', require('./userRoute'));
 // router.use('/api/v1/books', require('./bookRoute'));
