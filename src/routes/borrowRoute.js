@@ -1,7 +1,7 @@
 const express = require('express'),
   router = express.Router(),
   { Borrow } = require('../controllers'),
-  { verifyToken } = require('../middleware/authmiddleware');
+  { verifyToken, verifyTokenAdmin } = require('../middleware/authmiddleware');
 
 router.get('/health', (_, res) => {
   res.send('check');
@@ -9,5 +9,6 @@ router.get('/health', (_, res) => {
 
 // router.route('/:isbn').post(Borrow.createBorrowedRecord);
 router.post('/:isbn', verifyToken, Borrow.createBorrowedRecord);
+router.get('/', verifyTokenAdmin, Borrow.getAllBorrowedBooks);
 
 module.exports = router;

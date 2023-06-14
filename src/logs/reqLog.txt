@@ -626,3 +626,5 @@
 20230613	21:03:14	f565bfee-3098-41e0-970f-eac038fddf23	GET	undefined	/api/v1/books/greateryear/12-01-2018
 20230613	21:03:25	332af551-6557-4706-9501-ff565887d4f5	GET	undefined	/api/v1/books/greateryear/01-12-2018
 20230613	21:04:15	1c98280a-dcbf-460d-8652-3103fbde493e	GET	undefined	/api/v1/books/greateryear/01,12,2018
+20230614	14:25:10	ce052ddb-d565-487c-be24-e5117c835912	GET	undefined	/api/v1/borrow/
+20230614	14:27:03	190276d9-fd82-4e54-80e7-3a995ea31700	GET	undefined	/api/v1/borrow/

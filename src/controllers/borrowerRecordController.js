@@ -47,6 +47,12 @@ const createBorrowedRecord = async (req, res) => {
   }
 };
 
+const getAllBorrowedBooks = async (_, res) => {
+  const borrowedBooks = await BorrowerRecord.find();
+  res.json(borrowedBooks);
+};
+
 module.exports = {
   createBorrowedRecord,
+  getAllBorrowedBooks,
 };
