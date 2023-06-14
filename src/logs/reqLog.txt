@@ -613,3 +613,16 @@
 20230613	20:45:24	f8e838b5-2c21-45ae-9361-af286d54fa08	POST	undefined	/api/v1/books/
 20230613	20:46:34	0fcde4b6-5739-4846-8846-ce6baf22b901	POST	undefined	/api/v1/books/
 20230613	20:46:38	986af1c2-6837-4efd-877b-b1d300884ac8	GET	undefined	/api/v1/books?page=1
+20230613	20:59:56	3c9c41c9-c86b-44b6-bffa-f0b3c19070b6	GET	undefined	/api/v1/books/greateryear/12-05-2018
+20230613	21:00:16	b76c2462-2b30-455e-a30d-5e36bba1649a	GET	undefined	/api/v1/books/greateryear/12-05-2018?x-access-token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoiNjQ4N2EyZjJlOWQzZjhlMGE1NDlmOGRlIiwiZW1haWwiOiJ0b3VrYUBnbWFpbC5jb20iLCJpYXQiOjE2ODY3MDU5MjcsImV4cCI6MTY4NjcxMzEyN30.oJNnILUg6NG-pMChG05QsyI0o_6RmWBCUubRZmfNau0
+20230613	21:00:20	649931f6-149e-43c9-8029-d3f9f7d74917	POST	undefined	/api/v1/users/login
+20230613	21:00:30	5c8c27ca-d60e-49c3-a5da-caf500366907	GET	undefined	/api/v1/books/greateryear/12-05-2018?x-access-token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoiNjQ4N2EyZjJlOWQzZjhlMGE1NDlmOGRlIiwiZW1haWwiOiJ0b3VrYUBnbWFpbC5jb20iLCJpYXQiOjE2ODY3MDgwMjAsImV4cCI6MTY4NjcxNTIyMH0.1H7xEwW_rlzI--ZQ_You13DhKmbeg77d0D730mbbHfI
+20230613	21:01:07	7baa757c-c458-45fa-84e8-199aae6c4b10	GET	undefined	/api/v1/books/greateryear/12-05-2018?=
+20230613	21:01:12	f6b142a5-b2bc-482b-9c86-c3f56f417a04	GET	undefined	/api/v1/books/greateryear/12-05-2018
+20230613	21:01:21	508fbded-0adc-4ee6-96a1-73058ccc18ad	GET	undefined	/api/v1/books/greateryear/2018-05-01
+20230613	21:02:19	795c9e5f-17d2-4d4a-85f3-a8d7c6eb68d1	GET	undefined	/api/v1/books/greateryear/'2018-05-01'
+20230613	21:02:59	9a9bfd97-a294-48f9-9deb-cd5bc4b161c5	GET	undefined	/api/v1/books/greateryear/2018-05-01
+20230613	21:03:05	312f44c0-cbf5-4269-abbc-3781dcb2e7e9	GET	undefined	/api/v1/books/greateryear/2018
+20230613	21:03:14	f565bfee-3098-41e0-970f-eac038fddf23	GET	undefined	/api/v1/books/greateryear/12-01-2018
+20230613	21:03:25	332af551-6557-4706-9501-ff565887d4f5	GET	undefined	/api/v1/books/greateryear/01-12-2018
+20230613	21:04:15	1c98280a-dcbf-460d-8652-3103fbde493e	GET	undefined	/api/v1/books/greateryear/01,12,2018
