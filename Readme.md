@@ -26,3 +26,11 @@ The Book System Management application relies on the following dependencies:
 - [mongodb](https://www.mongodb.com/cloud/atlas/register) Official MongoDB driver for Node.js.
 - [mongoose](https://mongoosejs.com/docs/index.html) Object Data Modeling (ODM) library for MongoDB.
 - [uuid](https://github.com/uuidjs/uuid#readme) Generates universally unique identifiers (UUIDs).
+
+## Deployment
+
+The Book System Management application is deployed on Render.com, utilizing a cloud database powered by MongoDB Atlas.
+
+## Testing
+
+The Book System Management application has been thoroughly tested using Postman.
