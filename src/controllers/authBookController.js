@@ -2,8 +2,12 @@ const { Book } = require('../models');
 
 const getBookById = async (req, res) => {
   const { id } = req.params;
-  const bookById = await Book.findById(id);
-  res.json(bookById);
+  try {
+    const bookById = await Book.findById(id);
+    res.json(bookById);
+  } catch (error) {
+    console.log(error);
+  }
 };
 
 const getAllBooks = async (req, res) => {

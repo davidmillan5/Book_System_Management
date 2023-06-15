@@ -28,8 +28,12 @@ const updateBook = async (req, res) => {
 };
 
 const getAllBooks = async (_, res) => {
-  const book = await Book.find();
-  res.json(book);
+  try {
+    const book = await Book.find();
+    res.json(book);
+  } catch (error) {
+    console.log(error);
+  }
 };
 
 const getBookByCategory = async (req, res) => {
@@ -90,8 +94,12 @@ const getBookByIsbn = async (req, res) => {
 
 const deleteBook = async (req, res) => {
   const { id } = req.params;
-  const book = await Book.findOneAndRemove(id, { new: true });
-  res.json({ message: `Book ${book.title} has been deleted` });
+  try {
+    const book = await Book.findOneAndRemove(id, { new: true });
+    res.json({ message: `Book ${book.title} has been deleted` });
+  } catch (error) {
+    console.log(error);
+  }
 };
 
 module.exports = {
